@@ -10,10 +10,37 @@ class HomePage extends StatelessWidget {
       ),
       backgroundColor: Colors.white,
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Container(
+            width: 330,
+            height: 100,
+            child: Expanded(
+              child: Text(
+                ' Aperte o botão para iniciar demonstração de ChatBot.',
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 27,
+                ),
+              ),
+            ),
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [],
+            children: [
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  'Iniciar Conversa',
+                  style: TextStyle(
+                    color: Colors.orange,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              )
+            ],
           ),
         ],
       ),
